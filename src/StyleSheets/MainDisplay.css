@@ -1,0 +1,48 @@
+.fluid {
+  position: relative;
+  /* padding: 0px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 60px;
+    
+    border-radius: 5px;
+    width: 100% !important;
+    height: auto !important; */
+  height: 350px;
+  width: 300px;
+}
+
+.cardBody {
+  text-align: center !important;
+  width: 250px;
+  margin-top: 0px;
+  padding: 0px !important;
+}
+
+#wholeCard {
+  border: none;
+  height: 460px;
+  /* width: 250px; */
+}
+
+#cardcol {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  height: 100%;
+  line-height: 30px;
+}
+
+.commBtn {
+  position: absolute;
+  bottom: 0;
+  width: 75px;
+  height: 30px;
+  font-size: 10px !important;
+  padding: 0px;
+}
+
+.textTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
