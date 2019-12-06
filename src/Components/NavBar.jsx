@@ -53,19 +53,19 @@ class NavBar extends Component {
             </DropdownToggle>
             <DropdownMenu className="dropdown-class">
               <DropdownItem>
-                <Link onClick={() =><Genre/>, this.getGenre("fantasy")} to="/genre/fantasy">fantasy</Link>
+                <Link onClick={() =>  this.getGenre("fantasy")} to="/genre/fantasy">fantasy</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link onClick={() =><Genre/>, this.getGenre("horror")} to="/genre/horror">horror</Link>
+                <Link onClick={() => this.getGenre("horror")} to="/genre/horror">horror</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link onClick={() =><Genre/>, this.getGenre()} to="/genre/romance">romance</Link>
+                <Link onClick={() => this.getGenre()} to="/genre/romance">romance</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link onClick={() =><Genre/>, this.getGenre()} to="/genre/history">history</Link>
+                <Link onClick={() => this.getGenre()} to="/genre/history">history</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link  onClick={() =><Genre/>, this.getGenre()} to="/genre/scifi">scifi</Link>
+                <Link  onClick={() => this.getGenre()} to="/genre/scifi">scifi</Link>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -79,7 +79,7 @@ class NavBar extends Component {
   getGenre = genre => {
     var res = fetch("http://localhost:3000/books?category=" + genre);
     var genres = res.json
-    this.setState({ genre: genres });
+    // this.setState({ genre: genres });
   }
 
 }
